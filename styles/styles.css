@@ -37,6 +37,15 @@
 .light-mode .item1 {
   background-image: url("https://i.imgflip.com/4t0m5.jpg") !important;
 }
+.light-mode .item2 {
+  background-image: url("https://blog.logrocket.com/wp-content/uploads/2022/06/performance-unity-async-await-tasks-oroutines-job-system-burst-compiler.png") !important;
+}
+.light-mode .item3 {
+  background-image: url("https://picsum.photos/seed/picsum/200/300    ") !important;
+}
+.light-mode .item4 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Under_construction_icon-yellow.svg/1242px-Under_construction_icon-yellow.svg.png") !important;
+}
 .light-mode .sec3 {
   background-color: var(--color-grey-6);
 }
@@ -303,6 +312,21 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.about-container .right-about .item2 {
+  background-image: url("https://logos-world.net/wp-content/uploads/2021/11/Unity-New-Logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-container .right-about .item3 {
+  background-image: url("https://picsum.photos/id/237/200/300    ");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-container .right-about .item4 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUjBv0tVIuRpsneZfWY4gq8B7MAiP7w8qGsjgVf3oHvxj7ue9wt7JCDASMuBTTjzWbSrc&usqp=CAU");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .about-container .right-about .about-item {
   border: 1 px solid var(--color-grey-5);
   border-radius: 5px;
@@ -349,6 +373,9 @@ section {
   flex-direction: column;
   padding-right: 5rem;
   align-items: center;
+}
+.about-container .left-about #more {
+  display: none;
 }
 .about-container .left-about .image-container {
   margin: 1rem;
@@ -633,6 +660,7 @@ section {
 }
 
 .btn-container {
+  cursor: pointer;
   margin-top: 20px;
   display: flex;
   align-self: flex-start;

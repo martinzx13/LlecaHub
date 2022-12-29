@@ -32,6 +32,18 @@
   --color-grey-4: #454e53;
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
+  .item1 {
+    background-image: url("https://i.imgflip.com/4t0m5.jpg") !important;
+  }
+  .item2 {
+    background-image: url("https://blog.logrocket.com/wp-content/uploads/2022/06/performance-unity-async-await-tasks-oroutines-job-system-burst-compiler.png") !important;
+  }
+  .item3 {
+    background-image: url("https://picsum.photos/seed/picsum/200/300    ") !important;
+  }
+  .item4 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Under_construction_icon-yellow.svg/1242px-Under_construction_icon-yellow.svg.png") !important ;
+  }
   .sec3 {
     background-color: var(--color-grey-6);
     .main-title {
@@ -75,7 +87,6 @@ header {
   // min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
-
 }
 
 section {
@@ -289,6 +300,26 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+    .item1 {
+      background-image: url("https://i.imgflip.com/2hgfw.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .item2 {
+      background-image: url("https://logos-world.net/wp-content/uploads/2021/11/Unity-New-Logo.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .item3 {
+      background-image: url("https://picsum.photos/id/237/200/300    ");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .item4 {
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUjBv0tVIuRpsneZfWY4gq8B7MAiP7w8qGsjgVf3oHvxj7ue9wt7JCDASMuBTTjzWbSrc&usqp=CAU");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
     .about-item {
       border: 1 px solid var(--color-grey-5);
       border-radius: 5px;
@@ -305,16 +336,18 @@ section {
         display: flex;
         flex-direction: column;
         .large-text {
-          font-size: 3rem;
+          font-size: 2rem;
           font-weight: 700;
           color: var(---color-primary);
         }
         .small-text {
+          padding-top: 1rem;
           padding-left: 3rem;
           position: relative;
           text-transform: uppercase;
           font-size: 1.2rem;
-          color: var(--color-grey-1);
+          color: var(--color-white);
+          font-weight: bold;
           letter-spacing: 2px;
           &::before {
             content: "";
@@ -330,6 +363,9 @@ section {
     }
   }
   .left-about {
+    #more {
+      display: none;
+    }
     display: flex;
     flex-direction: column;
     padding-right: 5rem;
@@ -446,11 +482,11 @@ section {
               color: var(---color-primary);
             }
           }
-          p{
+          p {
             color: var(---color-primary);
             font-weight: bold;
             align-items: center;
-            margin:4px;
+            margin: 4px;
           }
         }
       }
@@ -627,6 +663,7 @@ section {
 
 //Independed components
 .btn-container {
+  cursor: pointer;
   margin-top: 20px;
   display: flex;
   align-self: flex-start;

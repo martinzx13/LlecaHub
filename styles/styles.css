@@ -598,7 +598,7 @@ section {
   display: flex;
   margin-top: 2rem;
 }
-.contact-content-con .left-contact .contact-icon a {
+.contact-content-con .left-contact .contact-icon button {
   display: flex;
   align-items: center;
   color: var(--color-white);
@@ -611,13 +611,13 @@ section {
   margin: 0 0.4rem;
   transition: var(--transition-effect);
 }
-.contact-content-con .left-contact .contact-icon a:hover {
+.contact-content-con .left-contact .contact-icon button:hover {
   background-color: var(--color-white);
 }
-.contact-content-con .left-contact .contact-icon a:hover i {
+.contact-content-con .left-contact .contact-icon button:hover i {
   color: var(---color-primary);
 }
-.contact-content-con .left-contact .contact-icon a i {
+.contact-content-con .left-contact .contact-icon button i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -655,8 +655,11 @@ section {
   justify-content: flex-start;
   margin-left: 1.5rem;
 }
+.contact-content-con .right-contact .submit-btn button {
+  color: var(---color-primary);
+}
 .contact-content-con .right-contact .submit-btn .btn-text {
-  color: var(--color-white);
+  color: var(--color-grey-6);
 }
 
 .btn-container {
@@ -666,6 +669,7 @@ section {
   align-self: flex-start;
 }
 
+button,
 .main-btn {
   border-radius: 30px;
   color: inherit;
@@ -678,9 +682,11 @@ section {
   border-top-width: 10px;
   overflow: hidden;
 }
+button .btn-text,
 .main-btn .btn-text {
   padding: 0 2rem;
 }
+button .btn-icon,
 .main-btn .btn-icon {
   background-color: var(--color-secondary);
   display: flex;
@@ -689,6 +695,7 @@ section {
   border-radius: 50%;
   padding: 1rem;
 }
+button::before,
 .main-btn::before {
   content: "";
   position: absolute;
@@ -698,6 +705,7 @@ section {
   transition: var(--transition-effect);
   z-index: -1;
 }
+button:hover::before,
 .main-btn:hover::before {
   width: 100%;
   height: 100%;
@@ -729,10 +737,12 @@ section {
   font-size: 6.3rem;
 }
 
+.about-container button,
 .about-container .main-btn {
   border: 1px solid var(---color-primary);
   border-top-width: 10px;
 }
+.about-container button:hover::before,
 .about-container .main-btn:hover::before {
   background-color: var(---color-primary);
 }
